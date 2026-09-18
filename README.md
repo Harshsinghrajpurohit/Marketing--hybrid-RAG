@@ -69,7 +69,3 @@ The same test set scored 0.11 / 0.00 / 0.11 / 0.00 before I prepended each page'
 ## Sources
 
 Apple's quarterly statements come from Apple's investor relations site. The 10-Ks are public SEC filings: Salesforce (CIK 0001108524), HubSpot (0001404655), Adobe (0000796343), Twilio (0001447669).
-
-## License
-
-MIT
