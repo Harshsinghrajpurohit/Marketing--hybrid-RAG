@@ -1,0 +1,24 @@
+# Environment credentials
+.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+temp/
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# Raw SEC downloads — re-fetchable with download_data.py, not loaded by the pipeline
+data/*_10k.txt
+
+# Private notes (kept locally, not published)
+Memory.md
+rules for a project.txt
+
+# OS artifacts
+Thumbs.db
+.DS_Store
