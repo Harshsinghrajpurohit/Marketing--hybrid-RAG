@@ -1,4 +1,4 @@
-# marketing-hybrid-rag
+# Marketing Hybrid RAG
 
 RAG over Apple's quarterly financial statements and the business sections of four marketing 10-Ks (Salesforce, HubSpot, Adobe, Twilio). 393 chunks across six documents.
 
