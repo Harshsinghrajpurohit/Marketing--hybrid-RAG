@@ -57,15 +57,6 @@ Faithfulness: 3/3 answers quoted only figures that appear in the retrieved chunk
 
 The same test set scored 0.11 / 0.00 / 0.11 / 0.00 before I prepended each page's header to every chunk on that page. The Apple PDFs are nothing but tables, so the date a row belonged to ended up in a different chunk from the numbers, and retrieval kept handing the model title pages instead.
 
-## Notes
-
-- Six questions isn't a benchmark. Treat the numbers as directional.
-- Hybrid didn't beat dense here. Fusion and reranking cost latency and bought nothing measurable on this corpus, so the gain came from the chunking fix rather than the architecture.
-- Apple's net income question scores 0 with all four methods and I never worked out why. It's the one result I can't explain.
-- The faithfulness check only looks at numbers. A wrong sentence made of words would pass it.
-- MarTech citations all read "page 0" because I load each 10-K as a single document.
-- I swapped BM25's tokenizer for a regex one, measured it (0.17 against 0.28), and put the naive `lower().split()` back. The comment in the code says why.
-
 ## Sources
 
 Apple's quarterly statements come from Apple's investor relations site. The 10-Ks are public SEC filings: Salesforce (CIK 0001108524), HubSpot (0001404655), Adobe (0000796343), Twilio (0001447669).
