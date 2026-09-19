@@ -12,12 +12,15 @@ temp/
 # Jupyter Checkpoints
 .ipynb_checkpoints/
 
-# Raw SEC downloads — re-fetchable with download_data.py, not loaded by the pipeline
+# Raw SEC downloads — not loaded by the pipeline; data/martech/*.txt are tracked
 data/*_10k.txt
 
 # Private notes (kept locally, not published)
 Memory.md
 rules for a project.txt
+
+# IDE / tool artifacts
+.kilo/
 
 # OS artifacts
 Thumbs.db
